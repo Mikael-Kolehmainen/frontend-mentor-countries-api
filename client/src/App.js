@@ -1,11 +1,13 @@
 import './styles/css/main.css';
+import Header from './components/Header';
 
-function App() {
+export default function App() {
   return (
-    <section>
-      <p>Test</p>
-    </section>
+    <div className="App">
+      <Header />
+      <section>
+        <p>Test</p>
+      </section>
+    </div>
   );
 }
-
-export default App;

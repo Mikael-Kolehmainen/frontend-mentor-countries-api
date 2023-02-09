@@ -13,6 +13,16 @@ html, body {
     color: $text-lm;
     overflow: hidden;
 }
+h1 {
+    font-weight: $bolder;
+    font-size: 22px;
+    color: $text-lm;
+}
+a {
+    font-weight: $bolder;
+    text-decoration: none;
+    color: $text-lm;
+}
 
 // SCROLL BAR
 

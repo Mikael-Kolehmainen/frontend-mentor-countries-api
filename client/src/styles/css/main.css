@@ -2,6 +2,22 @@
   font-family: nunito;
   src: url(/src/font/NunitoSans-Regular.ttf); }
 
+header {
+  position: relative;
+  background-color: white;
+  height: 75px;
+  box-shadow: 1px; }
+  header h1, header a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; }
+  header h1 {
+    left: 15%; }
+  header a {
+    left: 85%; }
+
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -13,6 +29,16 @@ html, body {
   background-color: #fafafa;
   color: #111517;
   overflow: hidden; }
+
+h1 {
+  font-weight: 800;
+  font-size: 22px;
+  color: #111517; }
+
+a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #111517; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -29,3 +55,9 @@ html, body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #111517; }
+
+a i {
+  width: 50%;
+  height: 50%; }
+  a i.fa-arrow-left {
+    background: url("/src/public_site/media/icons/moon-regular.svg") no-repeat center; }
