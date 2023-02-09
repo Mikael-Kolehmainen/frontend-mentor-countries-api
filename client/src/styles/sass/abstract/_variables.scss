@@ -2,7 +2,28 @@
 // FONT FAMILY
 
 @font-face {
-    font-family: roboto;
-    src: url();
+    font-family: nunito;
+    src: url(/src/font/NunitoSans-Regular.ttf);
 }
-$main-font: roboto;
+$main-font: nunito;
+
+// FONT WEIGHTS
+
+$regular: 300;
+$bold: 600;
+$bolder: 800;
+
+// COLORS
+
+$white: hsl(0, 0, 100);
+
+// LIGHT MODE
+
+$bg-lm: hsl(0, 0, 98);
+$input-lm: hsl(0, 0, 52);
+$text-lm: hsl(200, 15, 8);
+
+// DARK MODE
+
+$bg-dm: hsl(207, 26, 17);
+$elements-dm: hsl(209, 23, 22);
