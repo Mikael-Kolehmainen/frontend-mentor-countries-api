@@ -2,46 +2,45 @@
 // BASIC ELEMENTS
 
 * {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    font-family: $main-font;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
 }
 html, body {
-    height: 100%;
-    background-color: $bg-lm;
-    color: $text-lm;
-    overflow: hidden;
+  height: 100%;
+  background-color: $bg-lm;
+  color: $text-lm;
+  overflow: hidden;
 }
 h1 {
-    font-weight: $bolder;
-    font-size: 22px;
-    color: $text-lm;
+  font-weight: $bolder;
+  font-size: 22px;
+  color: $text-lm;
 }
 a {
-    font-weight: $bolder;
-    text-decoration: none;
-    color: $text-lm;
+  text-decoration: none;
+  color: $text-lm;
 }
 
 // SCROLL BAR
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $input-lm;
+  background: $input-lm;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: $text-lm;
+  background: $text-lm;
 }
