@@ -1,0 +1,23 @@
+.search-bar {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 7.5%;
+    width: 350px;
+
+    input {
+        width: 100%;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 60px;
+        padding-right: 20px;
+        box-shadow: $shadow;
+
+        &:focus {
+            outline: none;
+            box-shadow: $shadow-hover;
+        }
+    }
+}

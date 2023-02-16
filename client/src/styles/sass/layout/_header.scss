@@ -2,7 +2,7 @@ header {
     position: relative;
     background-color: $white;
     height: 75px;
-    box-shadow: 2px 5px 15px $shadow-color;
+    box-shadow: $shadow;
 
     h1, a {
         position: absolute;

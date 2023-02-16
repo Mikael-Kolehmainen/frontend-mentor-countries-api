@@ -15,3 +15,16 @@ a {
     }
   }
 }
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+
+  &.fa-magnifying-glass {
+    background: url('/src/media/icons/magnifying-glass.svg') no-repeat center;
+    left: 10%;
+  }
+}
