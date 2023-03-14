@@ -20,7 +20,7 @@ $bolder: 800;
 
 // COLORS
 
-$white: hsl(0, 0, 100);
+$white: hsl(0, 0, 100%);
 
 // SHADOW
 
@@ -29,11 +29,11 @@ $shadow-hover: 0px 0px 10px rgba(0, 0, 0, 1);
 
 // LIGHT MODE
 
-$bg-lm: hsl(0, 0, 98);
-$input-lm: hsl(0, 0, 52);
-$text-lm: hsl(200, 15, 8);
+$bg-lm: hsl(0, 0, 98%);
+$input-lm: hsl(0, 0, 52%);
+$text-lm: hsl(200, 15%, 8%);
 
 // DARK MODE
 
-$bg-dm: hsl(207, 26, 17);
-$elements-dm: hsl(209, 23, 22);
+$bg-dm: hsl(207, 26%, 17%);
+$elements-dm: hsl(209, 23%, 22%);

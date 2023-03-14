@@ -27,14 +27,14 @@
   .region {
     position: absolute;
     top: 50%;
-    left: 85%;
+    right: 2.5%;
     transform: translate(-50%, -50%);
     width: 200px;
     border-radius: 5px;
     border: none;
     padding: 20px 20px 20px 20px;
     box-shadow: $shadow;
-    background-color: white;
+    background-color: $white;
     cursor: pointer;
 
     &:focus {

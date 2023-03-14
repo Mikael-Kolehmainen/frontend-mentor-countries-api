@@ -1,6 +1,6 @@
 
 
-export default function Home() {
+export default function Search() {
   return (
     <section>
       <div className='search'>

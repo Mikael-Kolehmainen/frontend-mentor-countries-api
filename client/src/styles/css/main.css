@@ -25,7 +25,7 @@
   .search .region {
     position: absolute;
     top: 50%;
-    left: 85%;
+    right: 2.5%;
     transform: translate(-50%, -50%);
     width: 200px;
     border-radius: 5px;
@@ -39,6 +39,25 @@
       box-shadow: 0px 0px 10px black; }
     .search .region option {
       padding: 10px 0 10px 0; }
+
+.cards {
+  margin: 50px 9% 0 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .cards .card {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 0 0 40px 0;
+    border-radius: 10px; }
+    .cards .card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0; }
+    .cards .card h3 {
+      margin: 10px 0 10px 20px; }
+    .cards .card p {
+      margin: 0 0 0 20px; }
 
 header {
   position: relative;

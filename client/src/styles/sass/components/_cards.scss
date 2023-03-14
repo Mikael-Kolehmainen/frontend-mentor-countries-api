@@ -1,0 +1,25 @@
+.cards {
+  margin: 50px 9% 0 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .card {
+    width: 20%;
+    background-color: $white;
+    box-shadow: $shadow;
+    padding: 0 0 40px 0;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+    h3 {
+      margin: 10px 0 10px 20px;
+    }
+    p {
+      margin: 0 0 0 20px;
+    }
+  }
+}
