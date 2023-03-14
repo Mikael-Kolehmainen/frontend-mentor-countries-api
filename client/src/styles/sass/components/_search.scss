@@ -1,0 +1,48 @@
+.search {
+  height: 58px;
+  margin-top: 50px;
+  position: relative;
+  font-size: 14px;
+
+  .search-bar {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      padding: 20px 20px 20px 60px;
+      box-shadow: $shadow;
+
+      &:focus {
+          outline: none;
+          box-shadow: $shadow-hover;
+      }
+    }
+  }
+  .region {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 20px 20px 20px;
+    box-shadow: $shadow;
+    background-color: white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-hover;
+    }
+    option {
+      padding: 10px 0 10px 0;
+    }
+  }
+}
