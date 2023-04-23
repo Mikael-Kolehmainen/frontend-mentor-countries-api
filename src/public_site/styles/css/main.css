@@ -273,3 +273,6 @@ i {
 @media (max-width: 370px) {
   h1 {
     font-size: 16px; } }
+
+#dark-mode header {
+  background-color: #2b3945; }

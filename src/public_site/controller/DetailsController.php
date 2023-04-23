@@ -6,7 +6,10 @@ class DetailsController
 {
   public function showDetailsPage(): void
   {
-    echo "</head>";
+    echo "
+      </head>
+      <div class='wrapper'>
+    ";
 
     $headerController = new HeaderController();
     $headerController->showHeader();
@@ -49,6 +52,7 @@ class DetailsController
           </div>
         </div>
       </section>
+    </div>
     ";
   }
 }

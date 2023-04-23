@@ -13,7 +13,7 @@ class HeaderController
             <h1>Where in the world?</h1>
           </div>
           <div class='col'>
-            <a href='#'><i class='fa-regular fa-moon'></i> Dark Mode</a>
+            <a href='#' id='dark-mode-switch'><i class='fa-regular fa-moon'></i> Dark Mode</a>
           </div>
         </div>
       </header>

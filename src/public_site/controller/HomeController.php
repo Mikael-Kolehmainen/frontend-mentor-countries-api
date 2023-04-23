@@ -6,7 +6,10 @@ class HomeController
 {
   public function showHomePage(): void
   {
-    echo "</head>";
+    echo "
+      </head>
+      <div class='wrapper'>
+    ";
 
     $headerController = new HeaderController();
     $headerController->showHeader();
@@ -16,5 +19,7 @@ class HomeController
 
     $cardsController = new CardsController();
     $cardsController->showCards();
+
+    echo "</div>";
   }
 }
