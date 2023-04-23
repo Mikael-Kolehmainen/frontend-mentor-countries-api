@@ -1,0 +1,22 @@
+{
+  "name": "frontend-mentor-countries-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "sass": "node-sass -w src/public_site/styles/sass/ -o src/public_site/styles/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikael-Kolehmainen/frontend-mentor-countries-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikael-Kolehmainen/frontend-mentor-countries-api/issues"
+  },
+  "homepage": "https://github.com/Mikael-Kolehmainen/frontend-mentor-countries-api#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

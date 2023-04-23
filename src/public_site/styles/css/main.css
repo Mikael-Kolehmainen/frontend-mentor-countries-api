@@ -1,0 +1,141 @@
+@font-face {
+  font-family: nunito;
+  src: url(/src/public_site/font/NunitoSans-Regular.ttf); }
+
+.search {
+  height: 58px;
+  margin-top: 50px;
+  position: relative;
+  font-size: 14px; }
+  .search .search-bar {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 350px; }
+    .search .search-bar input {
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      padding: 20px 20px 20px 60px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
+      .search .search-bar input:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px black; }
+  .search .region {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    cursor: pointer; }
+    .search .region:focus {
+      outline: none;
+      box-shadow: 0px 0px 10px black; }
+    .search .region option {
+      padding: 10px 0 10px 0; }
+
+.cards {
+  margin: 50px 9% 0 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .cards .card {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 0 0 40px 0;
+    border-radius: 10px; }
+    .cards .card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0; }
+    .cards .card h3 {
+      margin: 10px 0 10px 20px; }
+    .cards .card p {
+      margin: 0 0 0 20px; }
+
+header {
+  position: relative;
+  background-color: white;
+  height: 75px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
+  header h1, header a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; }
+  header h1 {
+    left: 15%; }
+  header a {
+    left: 85%; }
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: nunito; }
+
+html, body, #root, .App {
+  position: relative;
+  height: 100%;
+  background-color: #fafafa;
+  color: #111517;
+  overflow: hidden; }
+
+h1 {
+  font-weight: 800;
+  font-size: 22px;
+  color: #111517; }
+
+a {
+  text-decoration: none;
+  color: #111517; }
+
+input {
+  color: #858585; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #858585; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111517; }
+
+a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%; }
+  a i.fa-moon {
+    background: url("/src/public_site/media/icons/moon-regular.svg") no-repeat center;
+    left: -20%;
+    width: 100%;
+    height: 100%; }
+
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px; }
+  i.fa-magnifying-glass {
+    background: url("/src/public_site/media/icons/magnifying-glass.svg") no-repeat center;
+    left: 10%; }
