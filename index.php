@@ -8,8 +8,7 @@ use api\manager\ServerRequestManager;
 /*
   TODO:
   Frontend
-    details page
-    error page
+    error page (if needed?)
   Mobile responsiveness
   Dark mode
   Backend

@@ -124,7 +124,6 @@ header {
       text-align: right; }
       header .row .col * {
         width: fit-content;
-        height: 30px;
         margin: auto 0 auto 0; }
       header .row .col a {
         position: relative;
@@ -149,7 +148,7 @@ html, body {
   height: 100%;
   background-color: #fafafa;
   color: #111517;
-  overflow: hidden; }
+  overflow: auto; }
 
 h1 {
   font-weight: 800;
@@ -245,3 +244,32 @@ i {
   i.fa-magnifying-glass {
     background: url("/src/public_site/media/icons/magnifying-glass.svg") no-repeat center;
     left: 10%; }
+
+@media (max-width: 1100px) {
+  header {
+    padding: 0 20px 0 20px; }
+  .details {
+    margin: 50px 20px 0 20px; }
+    .details .country {
+      display: block; }
+      .details .country img {
+        width: 100%;
+        margin: 0; }
+      .details .country .info {
+        margin: 0; }
+        .details .country .info h2 {
+          margin-top: 30px; }
+        .details .country .info .row {
+          display: block; }
+          .details .country .info .row .col:first-child {
+            margin-bottom: 40px; }
+        .details .country .info .border-countries {
+          margin: 40px 0 10px 0; } }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 18px; } }
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 16px; } }

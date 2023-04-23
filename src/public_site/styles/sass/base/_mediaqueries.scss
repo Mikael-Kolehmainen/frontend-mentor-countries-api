@@ -1,0 +1,65 @@
+
+// 1100PX
+
+@media (max-width: 1100px) {
+
+  // HEADER
+
+  header {
+    padding: 0 20px 0 20px;
+  }
+
+  // DETAILS PAGE
+
+  .details {
+    margin: 50px 20px 0 20px;
+
+    .country {
+      display: block;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+      .info {
+        margin: 0;
+
+        h2 {
+          margin-top: 30px;
+        }
+        .row {
+          display: block;
+
+          .col:first-child {
+            margin-bottom: 40px;
+          }
+        }
+        .border-countries {
+          margin: 40px 0 10px 0;
+        }
+      }
+    }
+  }
+}
+
+// 500PX
+
+@media (max-width: 500px) {
+
+  // HEADER
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+// 370PX
+
+@media (max-width: 370px) {
+
+  // HEADER
+
+  h1 {
+    font-size: 16px;
+  }
+}
