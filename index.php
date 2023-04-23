@@ -2,11 +2,17 @@
 
 use public_site\controller\ErrorController;
 use public_site\controller\HomeController;
+use public_site\controller\DetailsController;
 use api\manager\ServerRequestManager;
 
 /*
   TODO:
+  Frontend
+    details page
+    error page
   Mobile responsiveness
+  Backend
+    For Details page have country name as variable in url to figure out which country details to show.
   Add documentation to code
   Write readme
 */
@@ -32,6 +38,9 @@ switch ($uri[2]) {
   case "":
     showHome();
     break;
+  case "details":
+    showDetails();
+    break;
   case "error":
     showError("Error title", "This is the error page.", "/index.php");
     break;
@@ -55,6 +64,12 @@ function showHome()
 {
   $homeController = new HomeController();
   $homeController->showHomePage();
+}
+
+function showDetails()
+{
+  $detailsController = new DetailsController();
+  $detailsController->showDetailsPage();
 }
 
 function showError($title, $message, $link): void

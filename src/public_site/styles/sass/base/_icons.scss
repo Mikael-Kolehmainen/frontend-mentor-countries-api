@@ -13,6 +13,11 @@ a {
       width: 100%;
       height: 100%;
     }
+    &.fa-arrow-left-long {
+      background: url('/src/public_site/media/icons/arrow-left-long-solid.svg') no-repeat center;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 i {
