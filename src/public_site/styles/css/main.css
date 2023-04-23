@@ -62,6 +62,8 @@
       margin-left: 40px; }
     .cards .card:not(:nth-child(4n)) {
       margin-right: 40px; }
+    .cards .card:hover {
+      box-shadow: 0px 0px 10px black; }
     .cards .card img {
       width: 100%;
       border-radius: 10px 10px 0 0; }

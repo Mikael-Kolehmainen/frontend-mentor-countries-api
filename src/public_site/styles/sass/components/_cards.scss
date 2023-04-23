@@ -18,6 +18,9 @@
     &:not(:nth-child(4n)) {
       margin-right: 40px;
     }
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
     img {
       width: 100%;
       border-radius: 10px 10px 0 0;
