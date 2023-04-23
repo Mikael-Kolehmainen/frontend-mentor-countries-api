@@ -76,9 +76,33 @@
 .details {
   margin: 50px 100px 0 100px; }
   .details .country {
-    margin-top: 50px; }
+    margin-top: 50px;
+    height: 100%;
+    display: flex; }
+    .details .country img, .details .country .info {
+      width: 100%;
+      flex: 1 0 0;
+      margin: auto 0 auto 0; }
     .details .country img {
-      width: 40%; }
+      width: 40%;
+      margin-right: 60px; }
+    .details .country .info {
+      margin-left: 60px; }
+      .details .country .info h2 {
+        font-size: 30px;
+        margin-bottom: 30px; }
+      .details .country .info p {
+        font-size: 16px; }
+      .details .country .info .row {
+        width: 100%;
+        display: flex; }
+        .details .country .info .row .col {
+          flex: 1 0 0; }
+          .details .country .info .row .col p {
+            margin-bottom: 10px; }
+      .details .country .info .border-countries {
+        display: inline-block;
+        margin-top: 50px; }
   .details .btn::after {
     position: absolute;
     top: 50%;
@@ -170,6 +194,25 @@ input {
     box-shadow: 0px 0px 10px black; }
   .btn i {
     left: 25%; }
+
+.rectangles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .rectangles .rectangle {
+    flex: 1 0 0;
+    text-align: center;
+    max-width: fit-content;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 5px;
+    margin: 0 5px 5px 5px; }
+    .rectangles .rectangle:not(:first-child) {
+      margin-left: 5px; }
+    .rectangles .rectangle:hover {
+      box-shadow: 0px 0px 10px black; }
 
 a i {
   position: absolute;

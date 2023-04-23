@@ -74,3 +74,30 @@ input {
     left: 25%;
   }
 }
+
+// RECTANGLES
+
+.rectangles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .rectangle {
+    flex: 1 0 0;
+    text-align: center;
+    max-width: fit-content;
+    font-size: 14px;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 5px;
+    margin: 0 5px 5px 5px;
+
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
+  }
+}

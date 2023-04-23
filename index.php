@@ -11,6 +11,7 @@ use api\manager\ServerRequestManager;
     details page
     error page
   Mobile responsiveness
+  Dark mode
   Backend
     For Details page have country name as variable in url to figure out which country details to show.
   Add documentation to code

@@ -3,9 +3,44 @@
 
   .country {
     margin-top: 50px;
+    height: 100%;
+    display: flex;
 
+    img, .info {
+      width: 100%;
+      flex: 1 0 0;
+      margin: auto 0 auto 0;
+    }
     img {
       width: 40%;
+      margin-right: 60px;
+    }
+    .info {
+      margin-left: 60px;
+
+      h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+
+        .col {
+          flex: 1 0 0;
+
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .border-countries {
+        display: inline-block;
+        margin-top: 50px;
+      }
     }
   }
   .btn {
