@@ -1,16 +1,23 @@
 .cards {
-  margin: 50px 9% 0 9%;
+  margin: 50px 100px 0 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
   .card {
-    width: 20%;
+    flex: 1 0 17.5%;
+    max-width: 22.5%;
     background-color: $white;
     box-shadow: $shadow;
     padding: 0 0 35px 0;
     border-radius: 10px;
 
+    &:not(:first-child):not(:nth-child(5n)) {
+      margin-left: 40px;
+    }
+    &:not(:nth-child(4n)) {
+      margin-right: 40px;
+    }
     img {
       width: 100%;
       border-radius: 10px 10px 0 0;
