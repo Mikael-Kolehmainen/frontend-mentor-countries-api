@@ -1,48 +1,59 @@
 .search {
+  padding: 0 100px 0 100px;
   height: 58px;
   margin-top: 50px;
   position: relative;
   font-size: 14px;
 
-  .search-bar {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    width: 350px;
+  .row {
+    height: 100%;
+    display: flex;
 
-    input {
+    .col {
       width: 100%;
-      border-radius: 5px;
-      border: none;
-      padding: 20px 20px 20px 60px;
-      box-shadow: $shadow;
+      margin: auto 0 auto 0;
+      text-align: right;
 
-      &:focus {
+      .search-bar {
+        position: relative;
+        width: 400px;
+
+        i {
+          width: 20px;
+          height: 20px;
+          left: 30px;
+        }
+        input {
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          padding: 20px 20px 20px 60px;
+          box-shadow: $shadow;
+
+          &:focus {
+            outline: none;
+            box-shadow: $shadow-hover;
+          }
+        }
+      }
+      .region {
+        font-size: 14px;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        padding: 20px 20px 20px 20px;
+        box-shadow: $shadow;
+        background-color: $white;
+        cursor: pointer;
+
+        &:focus {
           outline: none;
           box-shadow: $shadow-hover;
+        }
+        option {
+          padding: 10px 0 10px 0;
+        }
       }
-    }
-  }
-  .region {
-    position: absolute;
-    top: 50%;
-    right: 2.5%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-    padding: 20px 20px 20px 20px;
-    box-shadow: $shadow;
-    background-color: $white;
-    cursor: pointer;
-
-    &:focus {
-      outline: none;
-      box-shadow: $shadow-hover;
-    }
-    option {
-      padding: 10px 0 10px 0;
     }
   }
 }

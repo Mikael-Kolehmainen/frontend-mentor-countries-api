@@ -6,6 +6,7 @@ use api\manager\ServerRequestManager;
 
 /*
   TODO:
+  Mobile responsiveness
   Add documentation to code
   Write readme
 */

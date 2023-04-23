@@ -3,42 +3,48 @@
   src: url(/src/public_site/font/NunitoSans-Regular.ttf); }
 
 .search {
+  padding: 0 100px 0 100px;
   height: 58px;
   margin-top: 50px;
   position: relative;
   font-size: 14px; }
-  .search .search-bar {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    width: 350px; }
-    .search .search-bar input {
+  .search .row {
+    height: 100%;
+    display: flex; }
+    .search .row .col {
       width: 100%;
-      border-radius: 5px;
-      border: none;
-      padding: 20px 20px 20px 60px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
-      .search .search-bar input:focus {
-        outline: none;
-        box-shadow: 0px 0px 10px black; }
-  .search .region {
-    position: absolute;
-    top: 50%;
-    right: 2.5%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-    padding: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    cursor: pointer; }
-    .search .region:focus {
-      outline: none;
-      box-shadow: 0px 0px 10px black; }
-    .search .region option {
-      padding: 10px 0 10px 0; }
+      margin: auto 0 auto 0;
+      text-align: right; }
+      .search .row .col .search-bar {
+        position: relative;
+        width: 400px; }
+        .search .row .col .search-bar i {
+          width: 20px;
+          height: 20px;
+          left: 30px; }
+        .search .row .col .search-bar input {
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          padding: 20px 20px 20px 60px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
+          .search .row .col .search-bar input:focus {
+            outline: none;
+            box-shadow: 0px 0px 10px black; }
+      .search .row .col .region {
+        font-size: 14px;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        cursor: pointer; }
+        .search .row .col .region:focus {
+          outline: none;
+          box-shadow: 0px 0px 10px black; }
+        .search .row .col .region option {
+          padding: 10px 0 10px 0; }
 
 .cards {
   margin: 50px 9% 0 9%;
@@ -49,7 +55,7 @@
     width: 20%;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    padding: 0 0 40px 0;
+    padding: 0 0 35px 0;
     border-radius: 10px; }
     .cards .card img {
       width: 100%;
@@ -57,7 +63,8 @@
     .cards .card h3 {
       margin: 10px 0 10px 20px; }
     .cards .card p {
-      margin: 0 0 0 20px; }
+      font-size: 14px;
+      margin: 0 0 5px 20px; }
 
 header {
   padding: 0 100px 0 100px;
