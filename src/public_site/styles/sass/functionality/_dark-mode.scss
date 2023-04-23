@@ -1,5 +1,63 @@
 #dark-mode {
+  background-color: $bg-dm;
+
   header {
     background-color: $elements-dm;
+  }
+  * {
+    color: $white;
+  }
+  a {
+    &:focus {
+      box-shadow: $shadow-hover-dm;
+    }
+    &:hover {
+      box-shadow: $shadow-hover-dm;
+    }
+    i {
+      &.fa-moon {
+        background: url('/src/public_site/media/icons/moon-solid-dark-mode.svg') no-repeat center;
+      }
+      &.fa-arrow-left-long {
+        background: url('/src/public_site/media/icons/arrow-left-long-solid-dark-mode.svg') no-repeat center;
+      }
+    }
+  }
+  .btn {
+    background-color: $elements-dm;
+  }
+  .search {
+    .row {
+      .col {
+        .search-bar {
+          input {
+            background-color: $elements-dm;
+
+            &:focus {
+              box-shadow: $shadow-hover-dm;
+            }
+          }
+        }
+        .region {
+          background-color: $elements-dm;
+
+          &:focus {
+            box-shadow: $shadow-hover-dm;
+          }
+        }
+      }
+    }
+  }
+  .cards {
+    .card {
+      background-color: $elements-dm;
+    }
+  }
+  .details {
+    .rectangles {
+      .rectangle {
+        background-color: $elements-dm;
+      }
+    }
   }
 }
