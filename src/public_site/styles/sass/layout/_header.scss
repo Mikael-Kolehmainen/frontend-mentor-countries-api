@@ -20,12 +20,17 @@ header {
       }
       a {
         position: relative;
+        padding: 5px 5px 5px 27.5px;
+        border-radius: 5px;
 
+        &:hover {
+          box-shadow: $shadow-hover;
+        }
         i {
           width: 20px;
           height: 20px;
-          right: 0;
-          top: 10px;
+          left: 12.5px;
+          top: 15px;
         }
       }
     }
