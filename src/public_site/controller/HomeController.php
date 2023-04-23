@@ -6,6 +6,8 @@ class HomeController
 {
   public function showHomePage(): void
   {
+    echo "</head>";
+
     $headerController = new HeaderController();
     $headerController->showHeader();
 
