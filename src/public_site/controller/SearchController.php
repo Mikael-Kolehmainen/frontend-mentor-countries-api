@@ -12,7 +12,7 @@ class SearchController
           <div class='col'>
             <div class='search-bar'>
               <i class='fa-solid fa-magnifying-glass'></i>
-              <input type='text' placeholder='Search for a country...' />
+              <input type='text' placeholder='Search for a country...' id='country-search-bar' />
             </div>
           </div>
           <div class='col'>

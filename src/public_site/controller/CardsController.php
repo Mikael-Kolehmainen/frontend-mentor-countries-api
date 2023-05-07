@@ -6,52 +6,34 @@ class CardsController
 {
   public function showCards(): void
   {
+    echo "<div class='cards'>";
+
+    $this->showCountries();
+
+    echo "</div>";
+  }
+
+  private function showCountries(): void
+  {
     $countries = $this->getCountries();
 
+    $i = 1;
     foreach ($countries as $country) {
-      $name = $country->name->common;
-      echo "<p>$name</p>";
-    }
+      $nth = $this->getElementNth($i);
+      $population = number_format($country->population);
 
-    echo "
-      <div class='cards'>
-        <a href='index.php/details' class='card'>
-          <img src='src/public_site/media/cardPlaceholder.webp' alt='country flag' />
-          <h3>Germany</h3>
-          <p><b>Population:</b> 81,770,900</p>
-          <p><b>Region:</b> Europe</p>
-          <p><b>Capital:</b> Berlin</p>
+      echo "
+        <a href='/index.php/details' class='card $nth'>
+          <img src='{$country->flags->png}' alt='{$country->flags->alt}' />
+          <h3 class='country-name'>{$country->name->common}</h3>
+          <p><b>Population:</b> {$population}</p>
+          <p><b>Region:</b> {$country->continents[0]}</p>
+          <p><b>Capital:</b> {$country->capital[0]}</p>
         </a>
-        <a href='index.php/details' class='card'>
-          <img src='src/public_site/media/cardPlaceholder.webp' alt='country flag' />
-          <h3>Germany</h3>
-          <p><b>Population:</b> 81,770,900</p>
-          <p><b>Region:</b> Europe</p>
-          <p><b>Capital:</b> Berlin</p>
-        </a>
-        <a href='index.php/details' class='card'>
-          <img src='src/public_site/media/cardPlaceholder.webp' alt='country flag' />
-          <h3>Germany</h3>
-          <p><b>Population:</b> 81,770,900</p>
-          <p><b>Region:</b> Europe</p>
-          <p><b>Capital:</b> Berlin</p>
-        </a>
-        <a href='index.php/details' class='card'>
-          <img src='src/public_site/media/cardPlaceholder.webp' alt='country flag' />
-          <h3>Germany</h3>
-          <p><b>Population:</b> 81,770,900</p>
-          <p><b>Region:</b> Europe</p>
-          <p><b>Capital:</b> Berlin</p>
-        </a>
-        <a href='index.php/details' class='card'>
-          <img src='src/public_site/media/cardPlaceholder.webp' alt='country flag' />
-          <h3>Germany</h3>
-          <p><b>Population:</b> 81,770,900</p>
-          <p><b>Region:</b> Europe</p>
-          <p><b>Capital:</b> Berlin</p>
-        </a>
-      </div>
-    ";
+      ";
+      $i++;
+      $nth = "";
+    }
   }
 
   private function getCountries(): array
@@ -81,5 +63,17 @@ class CardsController
     $countries = json_decode($response);
 
     return $countries;
+  }
+
+  private function getElementNth($i): string
+  {
+    if (($i - 1) % 4 === 0) {
+      return "first";
+    }
+    if ($i % 4 === 0) {
+      return "fourth";
+    }
+
+    return "";
   }
 }

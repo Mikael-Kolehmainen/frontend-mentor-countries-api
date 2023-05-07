@@ -1,11 +1,6 @@
-window.addEventListener("load", checkDarkModeState);
-
-const darkModeSwitch = document.getElementById("dark-mode-switch");
-darkModeSwitch.addEventListener("click", switchMode);
-
 let isDarkMode = true;
 
-function checkDarkModeState() {
+const checkDarkModeState = () => {
   const localStorageIsDark = window.localStorage.getItem("isDark");
 
   if (typeof localStorageIsDark !== "undefined") {
@@ -15,8 +10,7 @@ function checkDarkModeState() {
   switchMode();
 }
 
-function switchMode() {
-  console.log(isDarkMode);
+const switchMode = () => {
   const wrapper = document.getElementsByClassName("wrapper")[0];
 
   if (isDarkMode) {
@@ -30,10 +24,15 @@ function switchMode() {
   }
 }
 
-function setAttribute(element) {
+const setAttribute = (element) => {
   element.setAttribute("id", "dark-mode");
 }
 
-function removeAttribute(element) {
+const removeAttribute = (element) =>{
   element.removeAttribute("id");
 }
+
+window.addEventListener("load", checkDarkModeState);
+
+const darkModeSwitch = document.getElementById("dark-mode-switch");
+darkModeSwitch.addEventListener("click", switchMode);

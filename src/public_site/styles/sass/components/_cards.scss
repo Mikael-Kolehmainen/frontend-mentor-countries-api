@@ -10,13 +10,14 @@
     background-color: $white;
     box-shadow: $shadow;
     padding: 0 0 35px 0;
+    margin: 0 40px 25px 40px;
     border-radius: 10px;
 
-    &:not(:first-child):not(:nth-child(5n)) {
-      margin-left: 40px;
+    &.first {
+      margin-left: 0;
     }
-    &:not(:nth-child(4n)) {
-      margin-right: 40px;
+    &.fourth {
+      margin-right: 0;
     }
     &:hover {
       box-shadow: $shadow-hover;

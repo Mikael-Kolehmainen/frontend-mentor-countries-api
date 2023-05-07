@@ -7,6 +7,7 @@ class HomeController
   public function showHomePage(): void
   {
     echo "
+        <script src='/src/public_site/js/searchBar.js' defer></script>
       </head>
       <div class='wrapper'>
     ";
