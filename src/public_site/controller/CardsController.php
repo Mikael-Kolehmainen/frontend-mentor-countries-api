@@ -23,7 +23,7 @@ class CardsController
       $population = number_format($country->population);
 
       echo "
-        <a href='/index.php/details' class='card $nth'>
+        <a href='/index.php/details' class='card $nth' id='{$country->name->common}'>
           <img src='{$country->flags->png}' alt='{$country->flags->alt}' />
           <h3 class='country-name'>{$country->name->common}</h3>
           <p><b>Population:</b> {$population}</p>
